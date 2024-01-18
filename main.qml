@@ -19,6 +19,7 @@ FluWindow {
         id:d
         property bool flag: true
         property bool isFullScreen : window.visibility === Window.FullScreen
+        property int currVolume: 100
     }
 
     Rectangle{
@@ -35,6 +36,7 @@ FluWindow {
                 slider.value = position
             }
         }
+        volume: currVolume
         videoOutput:video_output
     }
 
@@ -160,11 +162,27 @@ FluWindow {
                     rightMargin: 10
                     bottomMargin: 5
                 }
+                spacing: 8
+                FluIconButton{
+                    iconSource: player.volume === 0 ? FluentIcons.Mute : FluentIcons.Volume
+                    width: 30
+                    height: 30
+                    iconSize: 16
+                    verticalPadding: 0
+                    horizontalPadding: 0
+                    onClicked: {
+                        if(player.volume != 0){
+                            player.volume = 0
+                        }else{
+                            player.volume = d.currVolume
+                        }
+                    }
+                }
                 FluIconButton{
                     iconSource: d.isFullScreen ? FluentIcons.BackToWindow : FluentIcons.FullScreen
                     width: 30
                     height: 30
-                    iconSize: 16
+                    iconSize: 14
                     verticalPadding: 0
                     horizontalPadding: 0
                     onClicked: {
