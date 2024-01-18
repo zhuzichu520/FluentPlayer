@@ -75,13 +75,25 @@ FluentPlayer::FluentPlayer(QObject *parent)
     position(0);
     duration(0);
     volume(100);
+    speed(2.0);
     playing(false);
 #if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
     connect(this,&FluentPlayer::videoOutputChanged,this,[this](){
         m_videoSink = _videoOutput->property("videoSink").value<QVideoSink*>();
-        loadSource(false);
+        loadSource(true,30000);
     });
 #endif
+    connect(this,&FluentPlayer::positionChanged,this,[this](){
+        if(position() == duration()){
+            stop();
+        }
+    });
+//    connect(this,&FluentPlayer::speedChanged,this,[this](){
+//        stopThreadAwit();
+//        cleanVideoFrame();
+//        cleanAudioFrame();
+//        startDeocde(position());
+//    });
     startTimer(1000);
 }
 
@@ -90,7 +102,7 @@ FluentPlayer::~FluentPlayer(){
 }
 
 void FluentPlayer::timerEvent(QTimerEvent *event){
-    qDebug()<<m_fpsCount;
+    //    qDebug()<<m_fpsCount;
     m_fpsCount = 0;
 }
 
@@ -112,6 +124,9 @@ void FluentPlayer::stop(){
 }
 
 void FluentPlayer::stopThreadAwit(){
+    if(m_threadCount == 0){
+        return;
+    }
     if(m_threading){
         m_threading = false;
     }
@@ -200,7 +215,6 @@ void FluentPlayer::doInWorkVideoRender(){
                     m_fpsCount++;
                     position(frame->endTime());
                     if(position() >= duration()){
-                        stop();
                         position(duration());
                     }
                 }
@@ -251,6 +265,7 @@ void FluentPlayer::doInWorkAudioRender(){
             if(frame){
                 auto duration = frame->endTime - frame->startTime - 1;
                 if(audioStream){
+                    while(audioSink->bytesFree() < frame->count){}
                     if(audioSink->volume() != volume()){
                         audioSink->setVolume(volume());
                     }
@@ -258,7 +273,7 @@ void FluentPlayer::doInWorkAudioRender(){
                 }
                 QThread::msleep(duration);
                 if(weakThis){
-                    m_clockMilliseconds = frame->endTime;
+                    m_clockMilliseconds = frame->endTime * speed();
                 }
             }
         }
@@ -307,7 +322,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             qWarning()<<"Cannot find stream information";
             return false;
         }
-        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
+        //        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
         int streamSize = formatCtx->nb_streams;
         for(int i=0;i<streamSize; i++){
             auto type = formatCtx->streams[i]->codecpar->codec_type;
@@ -343,7 +358,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
         }
         duration(formatCtx->duration * 1000 / AV_TIME_BASE);
         if(seek != 0){
-            qint64 position = qMin(seek,(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
+            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
             av_seek_frame(formatCtx, videoStreamIndex, position, AVSEEK_FLAG_BACKWARD);
         }
         return true;
@@ -505,10 +520,6 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         duration(formatCtx->duration * 1000 / AV_TIME_BASE);
         m_sampleRate = audioCodecCtx->sample_rate;
         m_channels = audioCodecCtx->ch_layout.nb_channels;
-        if(seek != 0){
-            qint64 position = qMin(seek,(qint64)duration()-1000)/(av_q2d(audioStream->time_base)*1000);
-            av_seek_frame(formatCtx, audioStreamIndex, position, AVSEEK_FLAG_BACKWARD);
-        }
         auto outChannelLayout = audioCodecCtx->ch_layout;
         ret = swr_alloc_set_opts2(&swrCtx,&outChannelLayout,outSampleFmt,m_sampleRate,&audioCodecCtx->ch_layout,audioCodecCtx->sample_fmt,audioCodecCtx->sample_rate,0,nullptr);
         if(ret < 0){
@@ -542,7 +553,7 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         const AVFilter *atempo = avfilter_get_by_name("atempo");
         AVFilterContext *atempoCtx = avfilter_graph_alloc_filter(graph, atempo, "atempo");
         AVDictionary *argsA = nullptr;
-        av_dict_set(&argsA, "tempo", std::to_string(1.0).c_str(), 0);
+        av_dict_set(&argsA, "tempo", std::to_string(speed()).c_str(), 0);
         if (avfilter_init_dict(atempoCtx, &argsA) < 0) {
             qWarning()<<"Error init atempo filter";
             return false;
@@ -575,6 +586,10 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
             qWarning()<<"Error config filter graph";
             return false;
         }
+        if(seek != 0){
+            qint64 position = qMin(seek,(qint64)duration()-1000)/(av_q2d(audioCodecCtx->time_base)*1000);
+            av_seek_frame(formatCtx, audioStreamIndex, position, AVSEEK_FLAG_BACKWARD);
+        }
         return true;
     };
     if(!init()){
@@ -588,32 +603,32 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         if(packet->stream_index == audioStreamIndex){
             if (avcodec_send_packet(audioCodecCtx, packet) == 0){
                 while (avcodec_receive_frame(audioCodecCtx, avframe) == 0){
-                    //                    if (av_buffersrc_add_frame(bufferCtx, avframe) < 0) {
-                    //                        av_log(NULL, AV_LOG_ERROR, "Failed to allocate filtered frame\n");
-                    //                        break;
-                    //                    }
-                    //                    while(true){
-                    //                        int ret = av_buffersink_get_frame(sinkCtx, avframe);
-                    //                        if(ret<0){
-                    //                            break;
-                    //                        }
-                    if(av_sample_fmt_is_planar(audioCodecCtx->sample_fmt)){
-                        QSharedPointer<QAudioFrame> frame(new QAudioFrame());
-                        frame->pcm = (uint8_t *) av_malloc(MaxAudioFrameSize * 2);
-                        int len = swr_convert(swrCtx,&frame->pcm,MaxAudioFrameSize * 2,(const uint8_t **) avframe->data,avframe->nb_samples);
-                        if (len <= 0)
-                        {
-                            continue;
+                    if (av_buffersrc_add_frame(bufferCtx, avframe) < 0) {
+                        av_log(NULL, AV_LOG_ERROR, "Failed to allocate filtered frame\n");
+                        break;
+                    }
+                    while(true){
+                        int ret = av_buffersink_get_frame(sinkCtx, avframe);
+                        if(ret<0){
+                            break;
                         }
-                        int count = av_samples_get_buffer_size(nullptr,m_channels,len,outSampleFmt,1);
-                        frame->count = count;
-                        frame->startTime = avframe->pts*av_q2d(audioCodecCtx->time_base)*1000;
-                        frame->endTime = (avframe->pts+avframe->duration)*av_q2d(audioCodecCtx->time_base)*1000;
-                        if(weakThis){
-                            weakThis->enqueueAudioFrame(frame);
-                            while(weakThis && m_threading && m_audioFrameCache.size() >= MaxFrameCacheSize){}
+                        if(av_sample_fmt_is_planar(audioCodecCtx->sample_fmt)){
+                            QSharedPointer<QAudioFrame> frame(new QAudioFrame());
+                            frame->pcm = (uint8_t *) av_malloc(MaxAudioFrameSize * 2);
+                            int len = swr_convert(swrCtx,&frame->pcm,MaxAudioFrameSize * 2,(const uint8_t **) avframe->data,avframe->nb_samples);
+                            if (len <= 0)
+                            {
+                                continue;
+                            }
+                            int count = av_samples_get_buffer_size(nullptr,m_channels,len,outSampleFmt,1);
+                            frame->count = count;
+                            frame->startTime = avframe->pts*av_q2d(audioCodecCtx->time_base)*1000;
+                            frame->endTime = (avframe->pts+avframe->duration)*av_q2d(audioCodecCtx->time_base)*1000;
+                            if(weakThis){
+                                weakThis->enqueueAudioFrame(frame);
+                                while(weakThis && m_threading && m_audioFrameCache.size() >= MaxFrameCacheSize){}
+                            }
                         }
-                        //                        }
                     }
                 }
             }

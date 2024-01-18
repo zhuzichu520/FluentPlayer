@@ -49,6 +49,7 @@ class FluentPlayer : public QObject
 #endif
     Q_PROPERTY_AUTO(QUrl,source)
     Q_PROPERTY_AUTO(int,volume)
+    Q_PROPERTY_AUTO(double,speed)
     Q_PROPERTY_READONLY_AUTO(double,duration)
     Q_PROPERTY_READONLY_AUTO(double,position)
     Q_PROPERTY_READONLY_AUTO(bool,playing)

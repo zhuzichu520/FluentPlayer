@@ -22,28 +22,59 @@ FluWindow {
         property int currVolume: 100
     }
 
+    ListModel{
+        id:model_speed
+        ListElement{
+            text:"2.0x"
+            value:2.0
+        }
+        ListElement{
+            text:"1.5x"
+            value:1.5
+        }
+        ListElement{
+            text:"1.25x"
+            value:1.25
+        }
+        ListElement{
+            text:"1.0x"
+            value:1.0
+        }
+        ListElement{
+            text:"0.75x"
+            value:0.75
+        }
+        ListElement{
+            text:"0.5x"
+            value:0.5
+        }
+    }
+
     Rectangle{
+        id:layout_background
         anchors.fill: parent
         color: FluColors.Black
     }
 
     FluentPlayer{
         id:player
-//        source: "file:///C:/Users/zhuzi/Desktop/video/mvxaFtMxTNDBvvj5.mp4"
-        source: "file:///C:/Users/Administrator/Desktop/Video/z89qvLhwGanvCzUe.mp4"
+        source: "file:///C:/Users/zhuzi/Desktop/video/mvxaFtMxTNDBvvj5.mp4"
+        //        source: "file:///C:/Users/Administrator/Desktop/Video/z89qvLhwGanvCzUe.mp4"
         onPositionChanged: {
             if(d.flag){
                 slider.value = position
             }
         }
-        volume: currVolume
+//        speed: model_speed.get(menu_speed.currIndex).value
+//        speed:1.0
+        volume: d.currVolume
         videoOutput:video_output
     }
 
     VideoOutput{
         id:video_output
         anchors.fill: parent
-//        source: player
+        //        source: player
     }
 
     Timer{
@@ -76,7 +107,7 @@ FluWindow {
             id:layout_control
             width: parent.width-30
             height: 100
-            opacity: 0
+            opacity: 1
             visible: opacity
             anchors{
                 horizontalCenter: parent.horizontalCenter
@@ -102,8 +133,8 @@ FluWindow {
                     top: parent.top
                     topMargin: 15
                 }
+                text:formatDuration(value)
                 from: 0
-                text: formatDuration(value)
                 to: player.duration
                 value: player.position
                 onPressedChanged: {
@@ -163,6 +194,18 @@ FluWindow {
                     bottomMargin: 5
                 }
                 spacing: 8
+
+                FluTextButton{
+                    id:btn_speed
+                    text: menu_speed.currIndex === 3 ? "倍速" : model_speed.get(menu_speed.currIndex).text
+                    normalColor: FluTheme.fontPrimaryColor
+                    onClicked: {
+                        var pos = mapToItem(layout_background,0,0)
+                        menu_speed.x = pos.x - (68-btn_speed.width)/2
+                        menu_speed.y =  pos.y - (menu_speed.count * 36)
+                        menu_speed.open()
+                    }
+                }
                 FluIconButton{
                     iconSource: player.volume === 0 ? FluentIcons.Mute : FluentIcons.Volume
                     width: 30
@@ -196,6 +239,22 @@ FluWindow {
             }
         }
     }
+
+    FluMenu{
+        id:menu_speed
+        width: 68
+        property int currIndex: 3
+        Repeater{
+            model: model_speed
+            FluMenuItem{
+                text: model.text
+                onClicked: {
+                    menu_speed.currIndex = index
+                }
+            }
+        }
+    }
+
 
     function formatDuration(duration) {
         const seconds = Math.floor(duration / 1000);
