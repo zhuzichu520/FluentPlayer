@@ -80,7 +80,7 @@ FluentPlayer::FluentPlayer(QObject *parent)
 #if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
     connect(this,&FluentPlayer::videoOutputChanged,this,[this](){
         m_videoSink = _videoOutput->property("videoSink").value<QVideoSink*>();
-        loadSource(true,30000);
+        loadSource(true,0);
     });
 #endif
     connect(this,&FluentPlayer::positionChanged,this,[this](){
@@ -273,7 +273,7 @@ void FluentPlayer::doInWorkAudioRender(){
                 }
                 QThread::msleep(duration);
                 if(weakThis){
-                    m_clockMilliseconds = frame->endTime * speed();
+                    m_clockMilliseconds = frame->endTime;
                 }
             }
         }
@@ -337,6 +337,13 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             return false;
         }
         videoStream = formatCtx->streams[videoStreamIndex];
+//        if(seek != 0){
+//            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
+//            av_seek_frame(formatCtx, videoStreamIndex, position, AVSEEK_FLAG_BACKWARD);
+//        }
+        AVRational timebase = videoStream->time_base;
+        timebase.den = timebase.den * speed();
+        videoStream->time_base = timebase;
         const AVCodec * videoCodec = avcodec_find_decoder(videoStream->codecpar->codec_id);
         if (videoCodec == nullptr) {
             release();
@@ -357,10 +364,6 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             return false;
         }
         duration(formatCtx->duration * 1000 / AV_TIME_BASE);
-        if(seek != 0){
-            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
-            av_seek_frame(formatCtx, videoStreamIndex, position, AVSEEK_FLAG_BACKWARD);
-        }
         return true;
     };
     if(!init()){
@@ -533,6 +536,10 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
             qWarning()<<"Error SwrContext init";
             return false;
         }
+        if(seek != 0){
+            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(audioCodecCtx->time_base)*1000);
+            av_seek_frame(formatCtx, audioStreamIndex, position, AVSEEK_FLAG_BACKWARD);
+        }
         std::string sampleRateStr = std::to_string(audioCodecCtx->sample_rate);
         std::string sampleFmtStr = std::string(av_get_sample_fmt_name(audioCodecCtx->sample_fmt));
         std::string sampleChannelStr;
@@ -585,10 +592,6 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         if (avfilter_graph_config(graph, NULL) < 0) {
             qWarning()<<"Error config filter graph";
             return false;
-        }
-        if(seek != 0){
-            qint64 position = qMin(seek,(qint64)duration()-1000)/(av_q2d(audioCodecCtx->time_base)*1000);
-            av_seek_frame(formatCtx, audioStreamIndex, position, AVSEEK_FLAG_BACKWARD);
         }
         return true;
     };
