@@ -7,6 +7,7 @@
 #include <QVideoFrame>
 #include <QSharedPointer>
 #include <QQueue>
+#include <QThread>
 #include <QMutex>
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
 #include <QAbstractVideoSurface>
@@ -48,7 +49,7 @@ class FluentPlayer : public QObject
     Q_PROPERTY_AUTO(QObject*,videoOutput)
 #endif
     Q_PROPERTY_AUTO(QUrl,source)
-    Q_PROPERTY_AUTO(int,volume)
+    Q_PROPERTY_AUTO(qreal,volume)
     Q_PROPERTY_AUTO(double,speed)
     Q_PROPERTY_READONLY_AUTO(double,duration)
     Q_PROPERTY_READONLY_AUTO(double,position)
@@ -78,12 +79,14 @@ private:
     void doInWorkVideoDecode(qint64 seek);
     void doInWorkAudioDecode(qint64 seek);
     void updateVideoFrame(QSharedPointer<QVideoFrame> frame);
+    void updateVideoFrame(const QVideoFrame& frame);
     QString getUrl();
     void checkThreadCompleted();
+    Q_SIGNAL void firstVideoFrameCompeletd(QVideoFrame frame);
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
     QAbstractVideoSurface* videoSurface();
+    Q_SIGNAL void sendVideoFrame(QVideoFrame frame);
     void setVideoSurface(QAbstractVideoSurface *surface);
-    void setVideoFormat(int width, int heigth, QVideoFrame::PixelFormat format = QVideoFrame::PixelFormat::Format_YUV420P);
 #endif
 private:
     QQueue<QSharedPointer<QVideoFrame>> m_videoFrameCache;
@@ -101,8 +104,7 @@ private:
     bool m_threadCompleted = false;
     QMutex m_videoMutex;
     QMutex m_audioMutex;
-    int m_channels = 0;
-    int m_sampleRate = 0;
+    int m_seek = 0;
 };
 
 #endif // FLUENTPLAYER_H

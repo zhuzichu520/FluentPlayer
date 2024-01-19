@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/FluentPlayer">
+        <file>res/shader/effect_blue.frag</file>
+        <file>res/shader/effect_blue.vert</file>
+        <file>res/shader/effect_green.frag</file>
+        <file>res/shader/effect_green.vert</file>
+        <file>res/shader/effect_red.frag</file>
+        <file>res/shader/effect_red.vert</file>
+        <file>qml/App.qml</file>
+        <file>qml/main.qml</file>
+    </qresource>
+</RCC>

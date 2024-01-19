@@ -50,37 +50,29 @@ void FluentPlayer::setVideoSurface(QAbstractVideoSurface *surface){
         m_format = m_videoSink->nearestFormat(m_format);
         m_videoSink->start(m_format);
     }
+    loadSource(false);
 }
 
-void FluentPlayer::setVideoFormat(int width, int heigth, QVideoFrame::PixelFormat pixelFormat){
-    QSize size(width, heigth);
-    QVideoSurfaceFormat format(size, pixelFormat);
-    m_format = format;
-    if (m_videoSink)
-    {
-        if (m_videoSink->isActive())
-        {
-            m_videoSink->stop();
-        }
-        m_format = m_videoSink->nearestFormat(m_format);
-        m_videoSink->start(m_format);
-    }
-}
 #endif
-
 
 FluentPlayer::FluentPlayer(QObject *parent)
     : QObject{parent}
 {
     position(0);
     duration(0);
-    volume(100);
-    speed(2.0);
+    volume(1);
+    speed(1.0);
     playing(false);
-#if QT_VERSION >= QT_VERSION_CHECK(6,0,0)
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
+    connect(this,&FluentPlayer::sendVideoFrame,this,[this](const QVideoFrame &frame){
+        if(m_videoSink){
+            m_videoSink->present(frame);
+        }
+    });
+#else
     connect(this,&FluentPlayer::videoOutputChanged,this,[this](){
         m_videoSink = _videoOutput->property("videoSink").value<QVideoSink*>();
-        loadSource(true,0);
+        loadSource(false);
     });
 #endif
     connect(this,&FluentPlayer::positionChanged,this,[this](){
@@ -88,12 +80,18 @@ FluentPlayer::FluentPlayer(QObject *parent)
             stop();
         }
     });
-//    connect(this,&FluentPlayer::speedChanged,this,[this](){
-//        stopThreadAwit();
-//        cleanVideoFrame();
-//        cleanAudioFrame();
-//        startDeocde(position());
-//    });
+    connect(this,&FluentPlayer::speedChanged,this,[this](){
+        seek(position());
+    });
+    connect(this,&FluentPlayer::firstVideoFrameCompeletd,this,[this](QVideoFrame frame){
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
+        QVideoSurfaceFormat format(frame.size(), frame.pixelFormat());
+        m_videoSink->stop();
+        m_videoSink->start(format);
+        QTimer::singleShot(100,this,[this,frame]{updateVideoFrame(frame);});
+#endif
+        updateVideoFrame(frame);
+    });
     startTimer(1000);
 }
 
@@ -139,6 +137,7 @@ void FluentPlayer::seek(qint64 seek){
     stopThreadAwit();
     cleanVideoFrame();
     cleanAudioFrame();
+    m_seek = seek;
     position(seek);
     startDeocde(seek);
 }
@@ -162,9 +161,17 @@ QString FluentPlayer::getUrl(){
 
 void FluentPlayer::updateVideoFrame(QSharedPointer<QVideoFrame> frame){
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
-    m_videoSink->present(*frame);
+    Q_EMIT sendVideoFrame(*frame);
 #else
     m_videoSink->setVideoFrame(*frame);
+#endif
+}
+
+void FluentPlayer::updateVideoFrame(const QVideoFrame& frame){
+#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
+    Q_EMIT sendVideoFrame(frame);
+#else
+    m_videoSink->setVideoFrame(frame);
 #endif
 }
 
@@ -207,14 +214,14 @@ void FluentPlayer::doInWorkVideoRender(){
                     if(delay<0){
                         break;
                     }
-                    delay = delay > 5 ? 5 : delay;
+                    delay = delay > 1 ? 1 : delay;
                     QThread::msleep(delay);
                 }
                 if(weakThis && m_threading && frame && !isSkip){
                     updateVideoFrame(frame);
                     m_fpsCount++;
-                    position(frame->endTime());
-                    if(position() >= duration()){
+                    position(m_clockMilliseconds);
+                    if(frame->endTime() >= duration()){
                         position(duration());
                     }
                 }
@@ -263,7 +270,7 @@ void FluentPlayer::doInWorkAudioRender(){
         while(weakThis && m_threading && _playing){
             auto frame = getAudioFrame();
             if(frame){
-                auto duration = frame->endTime - frame->startTime - 1;
+                auto delay = frame->endTime - frame->startTime;
                 if(audioStream){
                     while(audioSink->bytesFree() < frame->count){}
                     if(audioSink->volume() != volume()){
@@ -271,9 +278,9 @@ void FluentPlayer::doInWorkAudioRender(){
                     }
                     audioStream->write((const char *)frame->pcm,frame->count);
                 }
-                QThread::msleep(duration);
+                QThread::msleep(delay);
                 if(weakThis){
-                    m_clockMilliseconds = frame->endTime;
+                    m_clockMilliseconds = m_seek+ (frame->endTime-m_seek+delay)*speed();
                 }
             }
         }
@@ -322,7 +329,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             qWarning()<<"Cannot find stream information";
             return false;
         }
-        //        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
+        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
         int streamSize = formatCtx->nb_streams;
         for(int i=0;i<streamSize; i++){
             auto type = formatCtx->streams[i]->codecpar->codec_type;
@@ -337,13 +344,10 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             return false;
         }
         videoStream = formatCtx->streams[videoStreamIndex];
-//        if(seek != 0){
-//            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
-//            av_seek_frame(formatCtx, videoStreamIndex, position, AVSEEK_FLAG_BACKWARD);
-//        }
-        AVRational timebase = videoStream->time_base;
-        timebase.den = timebase.den * speed();
-        videoStream->time_base = timebase;
+        if(seek != 0){
+            qint64 position = qMin((qint64)(seek),(qint64)duration()-1000)/(av_q2d(videoStream->time_base)*1000);
+            av_seek_frame(formatCtx, videoStreamIndex, position, AVSEEK_FLAG_BACKWARD);
+        }
         const AVCodec * videoCodec = avcodec_find_decoder(videoStream->codecpar->codec_id);
         if (videoCodec == nullptr) {
             release();
@@ -384,7 +388,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
                     if(avframe->format == AV_PIX_FMT_YUV420P){
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
                         int frameBytes = av_image_get_buffer_size(AV_PIX_FMT_YUV420P, avframe->width, avframe->height, 1);
-                        frame = QSharedPointer<QVideoFrame>(new QVideoFrame());
+                        frame = QSharedPointer<QVideoFrame>(new QVideoFrame(frameBytes,QSize(avframe->width,avframe->height),avframe->width,QVideoFrame::PixelFormat::Format_YUV420P));
                         if (frame->map(QAbstractVideoBuffer::WriteOnly))
                         {
                             uchar * fdata = frame->bits();
@@ -408,10 +412,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
                         frame->unmap();
                         if(weakThis){
                             if(isFirst){
-#if QT_VERSION < QT_VERSION_CHECK(6,0,0)
-                                setVideoFormat(frame->width(),frame->height());
-#endif
-                                updateVideoFrame(frame);
+                                Q_EMIT firstVideoFrameCompeletd(*frame);
                                 isFirst = false;
                             }
                             weakThis->enqueueVideoFrame(frame);
@@ -446,6 +447,7 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
     AVFilterGraph *graph = nullptr;
     AVFilterContext *bufferCtx = nullptr;
     AVFilterContext *sinkCtx = nullptr;
+    int channels = 0;
     enum AVSampleFormat outSampleFmt = AV_SAMPLE_FMT_S16;
     auto release = [&formatCtx,&audioCodecCtx,&audioStream,&graph,&swrCtx,&bufferCtx,&sinkCtx](){
         if(formatCtx){
@@ -468,7 +470,7 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         bufferCtx = nullptr;
         sinkCtx = nullptr;
     };
-    auto init = [this,release,&formatCtx,&audioCodecCtx,&audioStream,&graph,&swrCtx,&bufferCtx,&sinkCtx,&url,&audioStreamIndex,&outSampleFmt,seek]{
+    auto init = [this,release,&formatCtx,&audioCodecCtx,&audioStream,&graph,&swrCtx,&bufferCtx,&sinkCtx,&url,&audioStreamIndex,&outSampleFmt,&channels,seek]{
         formatCtx = avformat_alloc_context();
         if (!formatCtx) {
             release();
@@ -521,10 +523,10 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
             return false;
         }
         duration(formatCtx->duration * 1000 / AV_TIME_BASE);
-        m_sampleRate = audioCodecCtx->sample_rate;
-        m_channels = audioCodecCtx->ch_layout.nb_channels;
+        auto sampleRate = audioCodecCtx->sample_rate;
+        channels = audioCodecCtx->ch_layout.nb_channels;
         auto outChannelLayout = audioCodecCtx->ch_layout;
-        ret = swr_alloc_set_opts2(&swrCtx,&outChannelLayout,outSampleFmt,m_sampleRate,&audioCodecCtx->ch_layout,audioCodecCtx->sample_fmt,audioCodecCtx->sample_rate,0,nullptr);
+        ret = swr_alloc_set_opts2(&swrCtx,&outChannelLayout,outSampleFmt,sampleRate,&audioCodecCtx->ch_layout,audioCodecCtx->sample_fmt,audioCodecCtx->sample_rate,0,nullptr);
         if(ret < 0){
             release();
             qWarning()<<"Could not allocate SwrContext";
@@ -552,7 +554,7 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
         std::string aformatString = "sample_fmts=" + sampleFmtStr + ":sample_rates=" + sampleRateStr + ":channel_layouts=" + sampleChannelStr;
         graph = avfilter_graph_alloc();
         const AVFilter *abuffer = avfilter_get_by_name("abuffer");
-        bufferCtx = avfilter_graph_alloc_filter(graph, abuffer, "AudioSrc");
+        bufferCtx = avfilter_graph_alloc_filter(graph, abuffer, "src");
         if (avfilter_init_str(bufferCtx, abufferString.c_str()) < 0) {
             qWarning()<<"Error init abuffer filter";
             return false;
@@ -623,7 +625,7 @@ void FluentPlayer::doInWorkAudioDecode(qint64 seek){
                             {
                                 continue;
                             }
-                            int count = av_samples_get_buffer_size(nullptr,m_channels,len,outSampleFmt,1);
+                            int count = av_samples_get_buffer_size(nullptr,channels,len,outSampleFmt,1);
                             frame->count = count;
                             frame->startTime = avframe->pts*av_q2d(audioCodecCtx->time_base)*1000;
                             frame->endTime = (avframe->pts+avframe->duration)*av_q2d(audioCodecCtx->time_base)*1000;

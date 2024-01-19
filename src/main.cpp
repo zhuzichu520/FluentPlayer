@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
     QQmlApplicationEngine engine;
     qmlRegisterType<FluentPlayer>("FluentPlayer", 1, 0, "FluentPlayer");
-    const QUrl url(QStringLiteral("qrc:/App.qml"));
+    const QUrl url(QStringLiteral("qrc:/FluentPlayer/qml/App.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
         &app, [url](QObject *obj, const QUrl &objUrl) {
             if (!obj && url == objUrl)

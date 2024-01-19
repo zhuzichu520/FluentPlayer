@@ -1,8 +1,8 @@
-import QtQuick
-import QtQuick.Window
-import QtQuick.Controls
-import QtQuick.Layouts
-import FluentUI
+import QtQuick 2.15
+import QtQuick.Window 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+import FluentUI 1.0
 
 Item {
     id: app
@@ -12,7 +12,7 @@ Item {
 //        FluApp.useSystemAppBar = true
 //        FluTheme.darkMode = FluThemeType.Dark
         FluApp.routes = {
-            "/":"qrc:/main.qml",
+            "/":"qrc:/FluentPlayer/qml/main.qml",
         }
         FluApp.navigate("/")
     }
