@@ -270,7 +270,7 @@ void FluentPlayer::doInWorkAudioRender(){
         while(weakThis && m_threading && _playing){
             auto frame = getAudioFrame();
             if(frame){
-                auto delay = frame->endTime - frame->startTime;
+//                auto delay = frame->endTime - frame->startTime - 2;
                 if(audioStream){
                     while(audioSink->bytesFree() < frame->count){}
                     if(audioSink->volume() != volume()){
@@ -278,9 +278,9 @@ void FluentPlayer::doInWorkAudioRender(){
                     }
                     audioStream->write((const char *)frame->pcm,frame->count);
                 }
-                QThread::msleep(delay);
+//                QThread::msleep(delay);
                 if(weakThis){
-                    m_clockMilliseconds = m_seek+ (frame->endTime-m_seek+delay)*speed();
+                    m_clockMilliseconds = m_seek+ (frame->endTime-m_seek)*speed();
                 }
             }
         }

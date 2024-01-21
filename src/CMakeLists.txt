@@ -21,7 +21,16 @@ else()
     set(CMAKE_RUNTIME_OUTPUT_DIRECTORY $<1:${CMAKE_SOURCE_DIR}/bin/release>)
 endif()
 
-link_directories(${CMAKE_SOURCE_DIR}/3rdparty/win32/ffmpeg/lib)
+
+if(WIN32)
+    set(3RDPARTY_DIR_PATH ${CMAKE_SOURCE_DIR}/3rdparty/win32)
+elseif(APPLE)
+    set(3RDPARTY_DIR_PATH ${CMAKE_SOURCE_DIR}/3rdparty/macos)
+else()
+    set(3RDPARTY_DIR_PATH ${CMAKE_SOURCE_DIR}/3rdparty/linux)
+endif()
+
+link_directories(${3RDPARTY_DIR_PATH}/ffmpeg/lib)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core Quick Multimedia)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core Quick Multimedia)
 
@@ -86,7 +95,7 @@ target_sources(FluentPlayer PRIVATE qml.qrc)
 endif()
 
 target_include_directories(FluentPlayer PRIVATE
-    ${CMAKE_SOURCE_DIR}/3rdparty/win32/ffmpeg/include
+    ${3RDPARTY_DIR_PATH}/ffmpeg/include
 )
 
 target_link_libraries(FluentPlayer PRIVATE

@@ -76,7 +76,7 @@ FluWindow {
     FluentPlayer{
         id:player
         //        source: "file:///C:/Users/zhuzi/Desktop/video/mvxaFtMxTNDBvvj5.mp4"
-        source: "file:///C:/Users/Administrator/Desktop/Video/EUioaYYzLrJUQwte.mp4"
+        source: "file:///C:/Users/zhuzi/Desktop/video/RRhrMuq1v1i8wlHr.mp4"
         onPositionChanged: {
             if(d.flag){
                 slider.value = position

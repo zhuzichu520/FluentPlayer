@@ -6,8 +6,8 @@ import QtMultimedia
 
 FluWindow {
     id: window
-    width: 800
-    height: 600
+    width: 1200
+    height: 800
     minimumWidth: 500
     minimumHeight: 400
     title:"视频播放器"
@@ -76,7 +76,7 @@ FluWindow {
     FluentPlayer{
         id:player
         //        source: "file:///C:/Users/zhuzi/Desktop/video/mvxaFtMxTNDBvvj5.mp4"
-        source: "file:///C:/Users/Administrator/Desktop/Video/ziZ3x0uYxoV0ivHG.mp4"
+        source: "file:////home/zhuzichu/桌面/video/ehNtQb5hun2Gwu5u.mp4"
         onPositionChanged: {
             if(d.flag){
                 slider.value = position
@@ -177,7 +177,7 @@ FluWindow {
                         d.flag = false
                     }else{
                         player.seek(position)
-                        d.flag = true;
+                        d.flag = true
                     }
                 }
             }
