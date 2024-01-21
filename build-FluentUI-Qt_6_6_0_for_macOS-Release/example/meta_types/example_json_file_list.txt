@@ -1,5 +1,0 @@
-/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include/../FHOFCCN7FJ/moc_CircularReveal.cpp.json
-/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include/../FHOFCCN7FJ/moc_FileWatcher.cpp.json
-/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include/../FHOFCCN7FJ/moc_FpsItem.cpp.json
-/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include/../UVLADIE3JM/moc_AppInfo.cpp.json
-/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include/../WROLH5MKTC/moc_SettingsHelper.cpp.json

@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/example">/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example</file>
-
-  </qresource>
-</RCC>
