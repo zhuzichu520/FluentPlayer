@@ -1,0 +1,359 @@
+{
+    "classes": [
+        {
+            "className": "Node",
+            "methods": [
+                {
+                    "access": "public",
+                    "name": "key",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "title",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "name": "depth",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "name": "isExpanded",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "hasChildren",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "index",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "hasNextNodeByIndex",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "checked",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "hideLineFooter",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "key",
+                    "read": "key",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "title",
+                    "read": "title",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "depth",
+                    "read": "depth",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "isExpanded",
+                    "read": "isExpanded",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "checked",
+                    "read": "checked",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "Node",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluTreeModel"
+                },
+                {
+                    "name": "QML.AddedInVersion",
+                    "value": "65281"
+                }
+            ],
+            "className": "FluTreeModel",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        },
+                        {
+                            "name": "count",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "removeRows",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        },
+                        {
+                            "name": "data",
+                            "type": "QList<Node*>"
+                        }
+                    ],
+                    "name": "insertRows",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getRow",
+                    "returnType": "QObject*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QList<Node*>"
+                        }
+                    ],
+                    "name": "setData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QList<QMap<QString,QVariant>>"
+                        }
+                    ],
+                    "name": "setDataSource",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "collapse",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "expand",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "dragIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "dropIndex",
+                            "type": "int"
+                        },
+                        {
+                            "name": "isDropTopArea",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "dragAnddrop",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "getNode",
+                    "returnType": "Node*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "refreshNode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        },
+                        {
+                            "name": "chekced",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "checkRow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "row",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "hitHasChildrenExpanded",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "name": "allExpand",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "allCollapse",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_dataSourceSize",
+                    "name": "dataSourceSize",
+                    "notify": "dataSourceSizeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_selectionModel",
+                    "name": "selectionModel",
+                    "notify": "selectionModelChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QList<Node*>",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluTreeModel",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "dataSourceSizeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "selectionModelChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QAbstractItemModel"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluTreeModel.h",
+    "outputRevision": 68
+}

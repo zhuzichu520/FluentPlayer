@@ -1,0 +1,51 @@
+{
+    "classes": [
+        {
+            "className": "SettingsHelper",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "darkModel",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "saveDarkMode",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "getDarkMode",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "useSystemAppBar",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "saveUseSystemAppBar",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "getUseSystemAppBar",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "SettingsHelper",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "SettingsHelper.h",
+    "outputRevision": 68
+}

@@ -1,0 +1,182 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "ScreenshotBackground"
+                }
+            ],
+            "className": "ScreenshotBackground",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "start",
+                            "type": "QPoint"
+                        },
+                        {
+                            "name": "end",
+                            "type": "QPoint"
+                        }
+                    ],
+                    "name": "capture",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_saveFolder",
+                    "name": "saveFolder",
+                    "notify": "saveFolderChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_captureMode",
+                    "name": "captureMode",
+                    "notify": "captureModeChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "ScreenshotBackground",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "saveFolderChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "captureModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "captrue",
+                            "type": "QPixmap"
+                        }
+                    ],
+                    "name": "captrueToPixmapCompleted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "captrue",
+                            "type": "QUrl"
+                        }
+                    ],
+                    "name": "captrueToFileCompleted",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "Screenshot"
+                }
+            ],
+            "className": "Screenshot",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_start",
+                    "name": "start",
+                    "notify": "startChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPoint",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_end",
+                    "name": "end",
+                    "notify": "endChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPoint",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_maskColor",
+                    "name": "maskColor",
+                    "notify": "maskColorChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QColor",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "Screenshot",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "startChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "endChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "maskColorChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "Screenshot.h",
+    "outputRevision": 68
+}

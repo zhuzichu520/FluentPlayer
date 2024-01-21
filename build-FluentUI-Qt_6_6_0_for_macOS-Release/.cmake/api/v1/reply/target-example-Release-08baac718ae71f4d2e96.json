@@ -1,0 +1,3831 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/FluentUI/bin/release/example.app/Contents/MacOS/example"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"install",
+			"target_link_libraries",
+			"set_target_properties",
+			"include",
+			"find_package",
+			"qt6_add_qml_module",
+			"qt_add_qml_module",
+			"find_dependency",
+			"_qt_internal_find_qt_dependencies",
+			"_qt_internal_target_enable_qmlcachegen",
+			"qt6_target_qml_sources",
+			"add_dependencies",
+			"target_compile_definitions",
+			"target_include_directories",
+			"_qt_internal_qml_type_registration",
+			"target_sources",
+			"qt6_extract_metatypes",
+			"__qt_propagate_generated_resource",
+			"_qt_internal_process_resource",
+			"qt6_add_resources"
+		],
+		"files" : 
+		[
+			"example/CMakeLists.txt",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6/Qt6Config.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Qml/Qt6QmlMacros.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake",
+			"/Users/zhuzichu/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.24/Modules/CMakeFindDependencyMacro.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Quick/Qt6QuickDependencies.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"src/CMakeLists.txt",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6QmlModels/Qt6QmlModelsTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6QmlModels/Qt6QmlModelsConfig.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Qml/Qt6QmlTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Qml/Qt6QmlConfig.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Network/Qt6NetworkVersionlessTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Qml/Qt6QmlDependencies.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"CMakeLists.txt",
+			"/Users/zhuzichu/Qt/6.6.0/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 181,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 173,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 156,
+				"parent" : 5
+			},
+			{
+				"file" : 2,
+				"parent" : 6
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 52,
+				"parent" : 7
+			},
+			{
+				"file" : 1,
+				"parent" : 8
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 62,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 130,
+				"parent" : 0
+			},
+			{
+				"command" : 6,
+				"file" : 4,
+				"line" : 716,
+				"parent" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 392,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 40,
+				"parent" : 7
+			},
+			{
+				"file" : 9,
+				"parent" : 14
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 39,
+				"parent" : 15
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 17
+			},
+			{
+				"file" : 6,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 57,
+				"parent" : 19
+			},
+			{
+				"file" : 5,
+				"parent" : 20
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 61,
+				"parent" : 21
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 16
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 23
+			},
+			{
+				"file" : 11,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 57,
+				"parent" : 25
+			},
+			{
+				"file" : 10,
+				"parent" : 26
+			},
+			{
+				"command" : 3,
+				"file" : 10,
+				"line" : 61,
+				"parent" : 27
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 5,
+				"file" : 12,
+				"line" : 19,
+				"parent" : 29
+			},
+			{
+				"file" : 3,
+				"parent" : 30
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 156,
+				"parent" : 31
+			},
+			{
+				"file" : 2,
+				"parent" : 32
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 52,
+				"parent" : 33
+			},
+			{
+				"file" : 1,
+				"parent" : 34
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 94,
+				"parent" : 35
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 40,
+				"parent" : 33
+			},
+			{
+				"file" : 9,
+				"parent" : 37
+			},
+			{
+				"command" : 9,
+				"file" : 9,
+				"line" : 39,
+				"parent" : 38
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 40
+			},
+			{
+				"file" : 14,
+				"parent" : 41
+			},
+			{
+				"command" : 4,
+				"file" : 14,
+				"line" : 52,
+				"parent" : 42
+			},
+			{
+				"file" : 13,
+				"parent" : 43
+			},
+			{
+				"command" : 3,
+				"file" : 13,
+				"line" : 93,
+				"parent" : 44
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 46
+			},
+			{
+				"file" : 6,
+				"parent" : 47
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 57,
+				"parent" : 48
+			},
+			{
+				"file" : 5,
+				"parent" : 49
+			},
+			{
+				"command" : 3,
+				"file" : 5,
+				"line" : 61,
+				"parent" : 50
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 52
+			},
+			{
+				"file" : 11,
+				"parent" : 53
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 52,
+				"parent" : 54
+			},
+			{
+				"file" : 15,
+				"parent" : 55
+			},
+			{
+				"command" : 3,
+				"file" : 15,
+				"line" : 94,
+				"parent" : 56
+			},
+			{
+				"command" : 4,
+				"file" : 11,
+				"line" : 52,
+				"parent" : 25
+			},
+			{
+				"file" : 15,
+				"parent" : 58
+			},
+			{
+				"command" : 3,
+				"file" : 15,
+				"line" : 62,
+				"parent" : 59
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 39
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 61
+			},
+			{
+				"file" : 17,
+				"parent" : 62
+			},
+			{
+				"command" : 4,
+				"file" : 17,
+				"line" : 53,
+				"parent" : 63
+			},
+			{
+				"file" : 16,
+				"parent" : 64
+			},
+			{
+				"command" : 3,
+				"file" : 16,
+				"line" : 94,
+				"parent" : 65
+			},
+			{
+				"command" : 4,
+				"file" : 17,
+				"line" : 41,
+				"parent" : 63
+			},
+			{
+				"file" : 20,
+				"parent" : 67
+			},
+			{
+				"command" : 9,
+				"file" : 20,
+				"line" : 39,
+				"parent" : 68
+			},
+			{
+				"command" : 8,
+				"file" : 8,
+				"line" : 111,
+				"parent" : 69
+			},
+			{
+				"command" : 5,
+				"file" : 7,
+				"line" : 47,
+				"parent" : 70
+			},
+			{
+				"file" : 19,
+				"parent" : 71
+			},
+			{
+				"command" : 4,
+				"file" : 19,
+				"line" : 57,
+				"parent" : 72
+			},
+			{
+				"file" : 18,
+				"parent" : 73
+			},
+			{
+				"command" : 3,
+				"file" : 18,
+				"line" : 61,
+				"parent" : 74
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 633,
+				"parent" : 12
+			},
+			{
+				"command" : 10,
+				"file" : 4,
+				"line" : 2211,
+				"parent" : 76
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 1069,
+				"parent" : 77
+			},
+			{
+				"file" : 23
+			},
+			{
+				"command" : 5,
+				"file" : 23,
+				"line" : 20,
+				"parent" : 79
+			},
+			{
+				"file" : 3,
+				"parent" : 80
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 156,
+				"parent" : 81
+			},
+			{
+				"file" : 22,
+				"parent" : 82
+			},
+			{
+				"command" : 4,
+				"file" : 22,
+				"line" : 53,
+				"parent" : 83
+			},
+			{
+				"file" : 21,
+				"parent" : 84
+			},
+			{
+				"command" : 3,
+				"file" : 21,
+				"line" : 62,
+				"parent" : 85
+			},
+			{
+				"command" : 12,
+				"file" : 4,
+				"line" : 2324,
+				"parent" : 76
+			},
+			{
+				"command" : 13,
+				"file" : 0,
+				"line" : 167,
+				"parent" : 0
+			},
+			{
+				"command" : 15,
+				"file" : 4,
+				"line" : 540,
+				"parent" : 12
+			},
+			{
+				"command" : 14,
+				"file" : 4,
+				"line" : 2635,
+				"parent" : 89
+			},
+			{
+				"command" : 14,
+				"file" : 0,
+				"line" : 146,
+				"parent" : 0
+			},
+			{
+				"command" : 14,
+				"file" : 4,
+				"line" : 2660,
+				"parent" : 89
+			},
+			{
+				"command" : 17,
+				"file" : 4,
+				"line" : 2465,
+				"parent" : 89
+			},
+			{
+				"command" : 16,
+				"file" : 24,
+				"line" : 1186,
+				"parent" : 93
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2626,
+				"parent" : 89
+			},
+			{
+				"command" : 20,
+				"file" : 4,
+				"line" : 584,
+				"parent" : 12
+			},
+			{
+				"command" : 19,
+				"file" : 24,
+				"line" : 326,
+				"parent" : 96
+			},
+			{
+				"command" : 18,
+				"file" : 24,
+				"line" : 2121,
+				"parent" : 97
+			},
+			{
+				"command" : 16,
+				"file" : 24,
+				"line" : 1765,
+				"parent" : 98
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 1068,
+				"parent" : 77
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2107,
+				"parent" : 76
+			},
+			{
+				"command" : 16,
+				"file" : 4,
+				"line" : 2260,
+				"parent" : 76
+			},
+			{
+				"command" : 20,
+				"file" : 4,
+				"line" : 2343,
+				"parent" : 76
+			},
+			{
+				"command" : 19,
+				"file" : 24,
+				"line" : 326,
+				"parent" : 247
+			},
+			{
+				"command" : 18,
+				"file" : 24,
+				"line" : 2121,
+				"parent" : 248
+			},
+			{
+				"command" : 16,
+				"file" : 24,
+				"line" : 1765,
+				"parent" : 249
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2"
+				},
+				{
+					"fragment" : "-std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 13,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 88,
+					"define" : "QT_MESSAGELOGCONTEXT"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "QT_QMLINTEGRATION_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_QMLMODELS_LIB"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "QT_QML_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_QUICK_LIB"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "QT_SVG_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 0,
+					"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/include"
+				},
+				{
+					"backtrace" : 90,
+					"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/FluentUI/example"
+				},
+				{
+					"backtrace" : 91,
+					"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/FluentUI/example/src/component"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework/Versions/A/Headers/6.6.0"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework/Versions/A/Headers/6.6.0/QtQml"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/6.6.0"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/Headers/6.6.0/QtCore"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtCore.framework/Headers"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtCore.framework"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/mkspecs/macx-clang"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/include"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework/Headers"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/include/QtQmlIntegration"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtNetwork.framework/Headers"
+				},
+				{
+					"backtrace" : 92,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtNetwork.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework/Headers"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework/Headers"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework/Headers"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtOpenGL.framework/Headers"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtOpenGL.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtSvg.framework/Headers"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtSvg.framework"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework/Versions/A/Headers/6.6.0"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework/Versions/A/Headers/6.6.0/QtQuick"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/6.6.0"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/Headers/6.6.0/QtGui"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework/Versions/A/Headers/6.6.0"
+				},
+				{
+					"backtrace" : 3,
+					"isSystem" : true,
+					"path" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework/Versions/A/Headers/6.6.0/QtQmlModels"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					13,
+					13
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				19,
+				20,
+				22,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				168
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "example_autogen::@70983d692f648185febe"
+		},
+		{
+			"id" : "example_autogen_timestamp_deps::@70983d692f648185febe"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "fluentuiplugin::@145eef247bfb46b6828c"
+		},
+		{
+			"backtrace" : 87,
+			"id" : "example_tooling::@70983d692f648185febe"
+		}
+	],
+	"id" : "example::@70983d692f648185febe",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "."
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-O3 -DNDEBUG",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-F/Users/zhuzichu/Qt/6.6.0/macos/lib",
+				"role" : "frameworkPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/Users/zhuzichu/Qt/6.6.0/macos/lib -Wl,-rpath,/Users/zhuzichu/Qt/6.6.0/macos/qml/FluentUI",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework/Versions/A/QtQuick",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtSvg.framework/Versions/A/QtSvg",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/qml/FluentUI/libfluentuiplugin.dylib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 10,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework/Versions/A/QtQmlModels",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 13,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework/Versions/A/QtQml",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 22,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 28,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 36,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQuick.framework/Versions/A/QtQuick",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 45,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQmlModels.framework/Versions/A/QtQmlModels",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 51,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtOpenGL.framework/Versions/A/QtOpenGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 57,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtGui.framework/Versions/A/QtGui",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "-framework AppKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "-framework ImageIO",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 60,
+				"fragment" : "-framework Metal",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Xlinker -framework -Xlinker OpenGL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-Xlinker -framework -Xlinker AGL",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 66,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtQml.framework/Versions/A/QtQml",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtNetwork.framework/Versions/A/QtNetwork",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 78,
+				"fragment" : "/Users/zhuzichu/Qt/6.6.0/macos/lib/QtCore.framework/Versions/A/QtCore",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 86,
+				"fragment" : "-framework IOKit",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 86,
+				"fragment" : "-framework DiskArbitration",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "example",
+	"nameOnDisk" : "example",
+	"paths" : 
+	{
+		"build" : "example",
+		"source" : "example"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2,
+				5,
+				7,
+				9,
+				11,
+				13,
+				15,
+				19,
+				20,
+				22,
+				23,
+				25,
+				27,
+				29,
+				31,
+				33,
+				35,
+				37,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				51,
+				53,
+				55,
+				57,
+				59,
+				61,
+				63,
+				65,
+				67,
+				69,
+				71,
+				73,
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93,
+				95,
+				97,
+				99,
+				101,
+				103,
+				105,
+				107,
+				109,
+				111,
+				113,
+				115,
+				117,
+				119,
+				121,
+				123,
+				125,
+				127,
+				129,
+				131,
+				133,
+				135,
+				137,
+				139,
+				141,
+				143,
+				145,
+				147,
+				149,
+				151,
+				153,
+				155,
+				157,
+				159,
+				161,
+				163,
+				165,
+				167,
+				168
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1,
+				3,
+				4,
+				6,
+				8,
+				10,
+				12,
+				14,
+				16,
+				17
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				18,
+				21,
+				24,
+				26,
+				28,
+				30,
+				32,
+				34,
+				36,
+				38,
+				40,
+				42,
+				44,
+				46,
+				48,
+				50,
+				52,
+				54,
+				56,
+				58,
+				60,
+				62,
+				64,
+				66,
+				68,
+				70,
+				72,
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				94,
+				96,
+				98,
+				100,
+				102,
+				104,
+				106,
+				108,
+				110,
+				112,
+				114,
+				116,
+				118,
+				120,
+				122,
+				124,
+				126,
+				128,
+				130,
+				132,
+				134,
+				136,
+				138,
+				140,
+				142,
+				144,
+				146,
+				148,
+				150,
+				152,
+				154,
+				156,
+				158,
+				160,
+				162,
+				164,
+				166,
+				169,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/Version.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/AppInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/AppInfo.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/app_dmp.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/component/CircularReveal.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/component/CircularReveal.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/component/FileWatcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/component/FileWatcher.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/component/FpsItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/component/FpsItem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/helper/Log.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/helper/Log.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/helper/SettingsHelper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/helper/SettingsHelper.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "example/src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/singleton.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "example/src/stdafx.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 94,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/meta_types/qt6example_release_metatypes.json.gen",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 95,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_qmltyperegistrations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 99,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qrc_qmake_example.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 100,
+			"path" : "example/qml-Qt6/App.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 101,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qmlcache_loader.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 102,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/App_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 103,
+			"path" : "example/qml-Qt6/chart/T_BarChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 104,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_BarChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 105,
+			"path" : "example/qml-Qt6/chart/T_BubbleChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 106,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_BubbleChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 107,
+			"path" : "example/qml-Qt6/chart/T_LineChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 108,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_LineChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 109,
+			"path" : "example/qml-Qt6/chart/T_PieChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 110,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_PieChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 111,
+			"path" : "example/qml-Qt6/chart/T_PolarAreaChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 112,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_PolarAreaChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 113,
+			"path" : "example/qml-Qt6/chart/T_RadarChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 114,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_RadarChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 115,
+			"path" : "example/qml-Qt6/chart/T_ScatterChart.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 116,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_ScatterChart_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 117,
+			"path" : "example/qml-Qt6/component/CodeExpander.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 118,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/component/CodeExpander_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 119,
+			"path" : "example/qml-Qt6/global/ItemsFooter.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 120,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/ItemsFooter_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 121,
+			"path" : "example/qml-Qt6/global/ItemsOriginal.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 122,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/ItemsOriginal_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 123,
+			"path" : "example/qml-Qt6/global/Lang.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 124,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/Lang_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 125,
+			"path" : "example/qml-Qt6/page/T_3D.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 126,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_3D_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 127,
+			"path" : "example/qml-Qt6/page/T_Acrylic.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 128,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Acrylic_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 129,
+			"path" : "example/qml-Qt6/page/T_Awesome.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Awesome_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 131,
+			"path" : "example/qml-Qt6/page/T_Badge.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 132,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Badge_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 133,
+			"path" : "example/qml-Qt6/page/T_BreadcrumbBar.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 134,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_BreadcrumbBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 135,
+			"path" : "example/qml-Qt6/page/T_Buttons.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 136,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Buttons_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 137,
+			"path" : "example/qml-Qt6/page/T_CalendarPicker.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 138,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_CalendarPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 139,
+			"path" : "example/qml-Qt6/page/T_Captcha.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 140,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Captcha_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 141,
+			"path" : "example/qml-Qt6/page/T_Carousel.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 142,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Carousel_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 143,
+			"path" : "example/qml-Qt6/page/T_CheckBox.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 144,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_CheckBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 145,
+			"path" : "example/qml-Qt6/page/T_Clip.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 146,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Clip_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 147,
+			"path" : "example/qml-Qt6/page/T_ColorPicker.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 148,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ColorPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 149,
+			"path" : "example/qml-Qt6/page/T_ComboBox.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 150,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ComboBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 151,
+			"path" : "example/qml-Qt6/page/T_DatePicker.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 152,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_DatePicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 153,
+			"path" : "example/qml-Qt6/page/T_Dialog.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 154,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Dialog_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 155,
+			"path" : "example/qml-Qt6/page/T_Expander.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 156,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Expander_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 157,
+			"path" : "example/qml-Qt6/page/T_FlipView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 158,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_FlipView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 159,
+			"path" : "example/qml-Qt6/page/T_Home.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 160,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Home_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 161,
+			"path" : "example/qml-Qt6/page/T_Image.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 162,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Image_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 163,
+			"path" : "example/qml-Qt6/page/T_InfoBar.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 164,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_InfoBar_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 165,
+			"path" : "example/qml-Qt6/page/T_Menu.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 166,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Menu_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 167,
+			"path" : "example/qml-Qt6/page/T_MultiWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 168,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_MultiWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 169,
+			"path" : "example/qml-Qt6/page/T_Network.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 170,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Network_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 171,
+			"path" : "example/qml-Qt6/page/T_Pagination.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 172,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Pagination_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 173,
+			"path" : "example/qml-Qt6/page/T_Pivot.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 174,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Pivot_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 175,
+			"path" : "example/qml-Qt6/page/T_Progress.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 176,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Progress_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 177,
+			"path" : "example/qml-Qt6/page/T_QRCode.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 178,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_QRCode_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 179,
+			"path" : "example/qml-Qt6/page/T_RadioButton.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 180,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RadioButton_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 181,
+			"path" : "example/qml-Qt6/page/T_RatingControl.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 182,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RatingControl_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 183,
+			"path" : "example/qml-Qt6/page/T_Rectangle.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 184,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Rectangle_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 185,
+			"path" : "example/qml-Qt6/page/T_RemoteLoader.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 186,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RemoteLoader_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 187,
+			"path" : "example/qml-Qt6/page/T_Screenshot.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 188,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Screenshot_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 189,
+			"path" : "example/qml-Qt6/page/T_Settings.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 190,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Settings_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 191,
+			"path" : "example/qml-Qt6/page/T_ShortcutPicker.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 192,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ShortcutPicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 193,
+			"path" : "example/qml-Qt6/page/T_Slider.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 194,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Slider_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 195,
+			"path" : "example/qml-Qt6/page/T_StaggeredView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 196,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_StaggeredView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 197,
+			"path" : "example/qml-Qt6/page/T_StatusView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 198,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_StatusView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 199,
+			"path" : "example/qml-Qt6/page/T_TabView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 200,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TabView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 201,
+			"path" : "example/qml-Qt6/page/T_TableView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 202,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TableView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 203,
+			"path" : "example/qml-Qt6/page/T_Text.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 204,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Text_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 205,
+			"path" : "example/qml-Qt6/page/T_TextBox.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 206,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TextBox_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 207,
+			"path" : "example/qml-Qt6/page/T_Theme.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 208,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Theme_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 209,
+			"path" : "example/qml-Qt6/page/T_TimePicker.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 210,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TimePicker_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 211,
+			"path" : "example/qml-Qt6/page/T_Timeline.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 212,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Timeline_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 213,
+			"path" : "example/qml-Qt6/page/T_ToggleSwitch.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 214,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ToggleSwitch_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 215,
+			"path" : "example/qml-Qt6/page/T_Tooltip.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 216,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Tooltip_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 217,
+			"path" : "example/qml-Qt6/page/T_Tour.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 218,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Tour_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 219,
+			"path" : "example/qml-Qt6/page/T_TreeView.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 220,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TreeView_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 221,
+			"path" : "example/qml-Qt6/page/T_Typography.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 222,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Typography_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 223,
+			"path" : "example/qml-Qt6/page/T_Watermark.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 224,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Watermark_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 225,
+			"path" : "example/qml-Qt6/viewmodel/SettingsViewModel.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 226,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/viewmodel/SettingsViewModel_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 227,
+			"path" : "example/qml-Qt6/viewmodel/TextBoxViewModel.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 228,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/viewmodel/TextBoxViewModel_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 229,
+			"path" : "example/qml-Qt6/window/AboutWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 230,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/AboutWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 231,
+			"path" : "example/qml-Qt6/window/CrashWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 232,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/CrashWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 233,
+			"path" : "example/qml-Qt6/window/HotloadWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 234,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/HotloadWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 235,
+			"path" : "example/qml-Qt6/window/LoginWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 236,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/LoginWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 237,
+			"path" : "example/qml-Qt6/window/MainWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 238,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/MainWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 239,
+			"path" : "example/qml-Qt6/window/PageWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 240,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/PageWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 241,
+			"path" : "example/qml-Qt6/window/SingleInstanceWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 242,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/SingleInstanceWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 243,
+			"path" : "example/qml-Qt6/window/SingleTaskWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 244,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/SingleTaskWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 245,
+			"path" : "example/qml-Qt6/window/StandardWindow.qml",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 246,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/StandardWindow_qml.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 250,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qrc_example_raw_qml_0.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/meta_types/qt6example_release_metatypes.json.gen.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_qmltyperegistrations.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qrc_qmake_example.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qmlcache_loader.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/App_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_BarChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_BubbleChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_LineChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_PieChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_PolarAreaChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_RadarChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/chart/T_ScatterChart_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/component/CodeExpander_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/ItemsFooter_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/ItemsOriginal_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/global/Lang_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_3D_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Acrylic_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Awesome_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Badge_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_BreadcrumbBar_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Buttons_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_CalendarPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Captcha_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Carousel_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_CheckBox_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Clip_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ColorPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ComboBox_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_DatePicker_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Dialog_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Expander_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_FlipView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Home_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Image_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_InfoBar_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Menu_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_MultiWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Network_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Pagination_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Pivot_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Progress_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_QRCode_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RadioButton_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RatingControl_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Rectangle_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_RemoteLoader_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Screenshot_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Settings_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ShortcutPicker_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Slider_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_StaggeredView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_StatusView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TabView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TableView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Text_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TextBox_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Theme_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TimePicker_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Timeline_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_ToggleSwitch_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Tooltip_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Tour_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_TreeView_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Typography_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/page/T_Watermark_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/viewmodel/SettingsViewModel_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/viewmodel/TextBoxViewModel_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/AboutWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/CrashWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/HotloadWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/LoginWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/MainWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/PageWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/SingleInstanceWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/SingleTaskWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qmlcache/example_qml-Qt6/window/StandardWindow_qml.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/.rcc/qrc_example_raw_qml_0.cpp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/example_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/example/meta_types/example_json_file_list.txt.rule",
+			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 13,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6qml_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6core_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 13,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6network_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6quick_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6gui_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6qmlmodels_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6opengl_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"path" : "/Users/zhuzichu/Qt/6.6.0/macos/metatypes/qt6svg_relwithdebinfo_metatypes.json",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 3,
+			"isGenerated" : true,
+			"path" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release/src/meta_types/qt6fluentuiplugin_release_metatypes.json",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "EXECUTABLE"
+}

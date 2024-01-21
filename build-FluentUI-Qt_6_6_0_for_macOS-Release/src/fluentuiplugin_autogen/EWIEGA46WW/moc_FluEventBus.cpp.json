@@ -1,0 +1,129 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluEvent"
+                }
+            ],
+            "className": "FluEvent",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_name",
+                    "name": "name",
+                    "notify": "nameChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluEvent",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "nameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "data",
+                            "type": "QMap<QString,QVariant>"
+                        }
+                    ],
+                    "name": "triggered",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluEventBus"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "FluEventBus",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "event",
+                            "type": "FluEvent*"
+                        }
+                    ],
+                    "name": "registerEvent",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "event",
+                            "type": "FluEvent*"
+                        }
+                    ],
+                    "name": "unRegisterEvent",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "params",
+                            "type": "QMap<QString,QVariant>"
+                        }
+                    ],
+                    "name": "post",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "name",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "post",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "FluEventBus",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluEventBus.h",
+    "outputRevision": 68
+}

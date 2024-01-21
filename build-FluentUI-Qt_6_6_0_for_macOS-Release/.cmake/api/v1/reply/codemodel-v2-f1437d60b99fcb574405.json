@@ -1,0 +1,297 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-src-Release-7baa87a6d77c57090859.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"build" : "example",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-example-Release-231c9668e11577dd3411.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "example",
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "FluentUI"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "fluentuiplugin",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "example",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint::@145eef247bfb46b6828c",
+					"jsonFile" : "target-all_qmllint-Release-9ba0dafc5ac54d563054.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_json::@145eef247bfb46b6828c",
+					"jsonFile" : "target-all_qmllint_json-Release-da9be2ccb8ec607c75e2.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmllint_module::@145eef247bfb46b6828c",
+					"jsonFile" : "target-all_qmllint_module-Release-298585a4bec2f6ce6b49.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "all_qmltyperegistrations::@145eef247bfb46b6828c",
+					"jsonFile" : "target-all_qmltyperegistrations-Release-86acfebe1f0bd654f783.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example::@70983d692f648185febe",
+					"jsonFile" : "target-example-Release-08baac718ae71f4d2e96.json",
+					"name" : "example",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_autogen::@70983d692f648185febe",
+					"jsonFile" : "target-example_autogen-Release-6dce2bb67d0da0f5f20c.json",
+					"name" : "example_autogen",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_autogen_timestamp_deps::@70983d692f648185febe",
+					"jsonFile" : "target-example_autogen_timestamp_deps-Release-352e9c946d7c6aa51802.json",
+					"name" : "example_autogen_timestamp_deps",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_other_files::@70983d692f648185febe",
+					"jsonFile" : "target-example_other_files-Release-588528e8a2f6edddfc41.json",
+					"name" : "example_other_files",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_qmllint::@70983d692f648185febe",
+					"jsonFile" : "target-example_qmllint-Release-2b0b20b204fe0c8b37ce.json",
+					"name" : "example_qmllint",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_qmllint_json::@70983d692f648185febe",
+					"jsonFile" : "target-example_qmllint_json-Release-c7dfc0fbd48d71d14361.json",
+					"name" : "example_qmllint_json",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_qmllint_module::@70983d692f648185febe",
+					"jsonFile" : "target-example_qmllint_module-Release-9f97ecda104227eedb6d.json",
+					"name" : "example_qmllint_module",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_qmltyperegistration::@70983d692f648185febe",
+					"jsonFile" : "target-example_qmltyperegistration-Release-f5e5811b35aa5374a2c5.json",
+					"name" : "example_qmltyperegistration",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "example_tooling::@70983d692f648185febe",
+					"jsonFile" : "target-example_tooling-Release-cadd71f3d94b4d81f769.json",
+					"name" : "example_tooling",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin-Release-5a6c8dadfed6dec99982.json",
+					"name" : "fluentuiplugin",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_autogen-Release-773182dfc04a7578b336.json",
+					"name" : "fluentuiplugin_autogen",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_autogen_timestamp_deps::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_autogen_timestamp_deps-Release-b00f55e61db0a3eeab8b.json",
+					"name" : "fluentuiplugin_autogen_timestamp_deps",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_qmllint-Release-3b2d1cc892b73a517d33.json",
+					"name" : "fluentuiplugin_qmllint",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_json::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_qmllint_json-Release-58ee13384b75651caa30.json",
+					"name" : "fluentuiplugin_qmllint_json",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmllint_module::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_qmllint_module-Release-d66945a2a6f4dce653b9.json",
+					"name" : "fluentuiplugin_qmllint_module",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_qmltyperegistration::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_qmltyperegistration-Release-54105fcc08981ced8d9e.json",
+					"name" : "fluentuiplugin_qmltyperegistration",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "fluentuiplugin_tooling::@145eef247bfb46b6828c",
+					"jsonFile" : "target-fluentuiplugin_tooling-Release-cb5487fdcfbf93a9fe91.json",
+					"name" : "fluentuiplugin_tooling",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/zhuzichu/QtProjects/FluentPlayer/build-FluentUI-Qt_6_6_0_for_macOS-Release",
+		"source" : "/Users/zhuzichu/QtProjects/FluentPlayer/FluentUI"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

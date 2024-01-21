@@ -1,0 +1,101 @@
+{
+    "classes": [
+        {
+            "className": "CircularReveal",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "w",
+                            "type": "int"
+                        },
+                        {
+                            "name": "h",
+                            "type": "int"
+                        },
+                        {
+                            "name": "center",
+                            "type": "QPoint"
+                        },
+                        {
+                            "name": "radius",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "start",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_target",
+                    "name": "target",
+                    "notify": "targetChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QQuickItem*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_radius",
+                    "name": "radius",
+                    "notify": "radiusChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "CircularReveal",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "targetChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "radiusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "imageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "animationFinished",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "name": "handleGrabResult",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "CircularReveal.h",
+    "outputRevision": 68
+}

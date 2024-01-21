@@ -1,0 +1,14 @@
+prefix=/usr/local/Cellar/ffmpeg/6.1.1_2
+exec_prefix=${prefix}
+libdir=/usr/local/Cellar/ffmpeg/6.1.1_2/lib
+includedir=/usr/local/Cellar/ffmpeg/6.1.1_2/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 58.29.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -framework VideoToolbox -L/usr/local/Cellar/libx11/1.8.7/lib -lX11 -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Cflags: -I${includedir}

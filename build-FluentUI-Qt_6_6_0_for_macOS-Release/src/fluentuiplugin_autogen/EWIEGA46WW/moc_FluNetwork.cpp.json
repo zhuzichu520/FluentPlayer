@@ -1,0 +1,612 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluNetworkCallable"
+                }
+            ],
+            "className": "NetworkCallable",
+            "object": true,
+            "qualifiedClassName": "NetworkCallable",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "start",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "finish",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "int"
+                        },
+                        {
+                            "name": "errorString",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "result",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "error",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "result",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "success",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "result",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "cache",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "sent",
+                            "type": "qint64"
+                        },
+                        {
+                            "name": "total",
+                            "type": "qint64"
+                        }
+                    ],
+                    "name": "uploadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "recv",
+                            "type": "qint64"
+                        },
+                        {
+                            "name": "total",
+                            "type": "qint64"
+                        }
+                    ],
+                    "name": "downloadProgress",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "className": "DownloadParam",
+            "object": true,
+            "qualifiedClassName": "DownloadParam",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluNetworkParams"
+                }
+            ],
+            "className": "NetworkParams",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "val",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "addQuery",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "val",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "addHeader",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "val",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "add",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "val",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "addFile",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "setBody",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "setTimeout",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "setRetry",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "int"
+                        }
+                    ],
+                    "name": "setCacheMode",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "destPath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "append",
+                            "type": "bool"
+                        }
+                    ],
+                    "name": "toDownload",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "destPath",
+                            "type": "QString"
+                        }
+                    ],
+                    "isCloned": true,
+                    "name": "toDownload",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "target",
+                            "type": "QObject*"
+                        }
+                    ],
+                    "name": "bind",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "val",
+                            "type": "QVariant"
+                        }
+                    ],
+                    "name": "openLog",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "result",
+                            "type": "NetworkCallable*"
+                        }
+                    ],
+                    "name": "go",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "NetworkParams",
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        },
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "FluNetwork"
+                },
+                {
+                    "name": "QML.Singleton",
+                    "value": "true"
+                }
+            ],
+            "className": "FluNetwork",
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "get",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "head",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "postBody",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "putBody",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "patchBody",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "deleteBody",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "postForm",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "putForm",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "patchForm",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "deleteForm",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "postJson",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "putJson",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "patchJson",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "deleteJson",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "postJsonArray",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "putJsonArray",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "patchJsonArray",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "name": "deleteJsonArray",
+                    "returnType": "NetworkParams*"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "interceptor",
+                            "type": "QJSValue"
+                        }
+                    ],
+                    "name": "setInterceptor",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_timeout",
+                    "name": "timeout",
+                    "notify": "timeoutChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "member": "_retry",
+                    "name": "retry",
+                    "notify": "retryChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "member": "_cacheDir",
+                    "name": "cacheDir",
+                    "notify": "cacheDirChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "member": "_openLog",
+                    "name": "openLog",
+                    "notify": "openLogChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FluNetwork",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "timeoutChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "retryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "cacheDirChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "name": "openLogChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FluNetwork.h",
+    "outputRevision": 68
+}

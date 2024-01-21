@@ -1,4 +1,6 @@
 import QtQuick
+import QtQml
+import QtQuick.Controls
 import QtQuick.Window
 import FluentUI
 import FluentPlayer
@@ -6,8 +8,8 @@ import QtMultimedia
 
 FluWindow {
     id: window
-    width: 1200
-    height: 800
+    width: 1000
+    height: 600
     minimumWidth: 500
     minimumHeight: 400
     title:"视频播放器"
@@ -76,7 +78,8 @@ FluWindow {
     FluentPlayer{
         id:player
         //        source: "file:///C:/Users/zhuzi/Desktop/video/mvxaFtMxTNDBvvj5.mp4"
-        source: "file:////home/zhuzichu/桌面/video/ehNtQb5hun2Gwu5u.mp4"
+//        source: "file:////home/zhuzichu/桌面/video/ehNtQb5hun2Gwu5u.mp4"
+        source: "file:///Users/zhuzichu/Desktop/Video/mvxaFtMxTNDBvvj5.mp4"
         onPositionChanged: {
             if(d.flag){
                 slider.value = position

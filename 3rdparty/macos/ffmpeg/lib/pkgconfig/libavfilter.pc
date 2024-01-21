@@ -1,0 +1,14 @@
+prefix=/usr/local/Cellar/ffmpeg/6.1.1_2
+exec_prefix=${prefix}
+libdir=/usr/local/Cellar/ffmpeg/6.1.1_2/lib
+includedir=/usr/local/Cellar/ffmpeg/6.1.1_2/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 9.12.100
+Requires: 
+Requires.private: libswscale >= 7.5.100, libpostproc >= 57.3.100, libavformat >= 60.16.100, libavcodec >= 60.31.102, libswresample >= 4.12.100, libavutil >= 58.29.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -framework OpenGL -framework OpenGL -pthread -lm -L/usr/local/Cellar/libsamplerate/0.2.2/lib -L/usr/local/Cellar/rubberband/3.3.0/lib -lrubberband -framework Accelerate -lsamplerate -lstdc++ -L/usr/local/Cellar/harfbuzz/8.3.0/lib -lharfbuzz -L/usr/local/Cellar/libvmaf/3.0.0/lib -lvmaf -L/usr/local/Cellar/tesseract/5.3.3/lib -L/usr/local/Cellar/libarchive/3.7.2/lib -ltesseract -larchive -lcurl -L/usr/local/Cellar/libass/0.17.1/lib -lass -L/usr/local/Cellar/libvidstab/1.1.1/lib -lvidstab -lm -framework Metal -framework VideoToolbox -L/usr/local/Cellar/zeromq/4.3.5_1/lib -lzmq -L/usr/local/Cellar/zimg/3.0.5/lib -lzimg -framework CoreImage -framework AppKit -L/usr/local/opt/freetype/lib -L/usr/local/Cellar/fontconfig/2.15.0/lib -lfontconfig -lfreetype -L/usr/local/opt/freetype/lib -lfreetype -L/usr/local/opt/openvino/lib/pkgconfig/../..//lib -lopenvino_onnx_frontend -lopenvino_paddle_frontend -lopenvino_pytorch_frontend -lopenvino_tensorflow_frontend -lopenvino_tensorflow_lite_frontend -lopenvino_c -lopenvino -ltbb -lpugixml -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Cflags: -I${includedir}

@@ -1,0 +1,40 @@
+{
+    "classes": [
+        {
+            "className": "FpsItem",
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "member": "_fps",
+                    "name": "fps",
+                    "notify": "fpsChanged",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "FpsItem",
+            "signals": [
+                {
+                    "access": "public",
+                    "name": "fpsChanged",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "FpsItem.h",
+    "outputRevision": 68
+}

@@ -262,7 +262,7 @@ void FluentPlayer::doInWorkAudioRender(){
             audioStream = nullptr;
         }
         if(audioSink){
-            audioSink->deleteLater();
+            delete audioSink;
             audioSink = nullptr;
         }
     };
@@ -290,7 +290,7 @@ void FluentPlayer::doInWorkAudioRender(){
         checkThreadCompleted();
     }
     qDebug()<< "Audio render thread completed";
-};
+}
 
 void FluentPlayer::doInWorkVideoDecode(qint64 seek){
     auto weakThis = QPointer<FluentPlayer>(this);
@@ -329,7 +329,7 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
             qWarning()<<"Cannot find stream information";
             return false;
         }
-        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
+//        av_dump_format(formatCtx, 0, url.toUtf8(), 0);
         int streamSize = formatCtx->nb_streams;
         for(int i=0;i<streamSize; i++){
             auto type = formatCtx->streams[i]->codecpar->codec_type;
@@ -434,8 +434,8 @@ void FluentPlayer::doInWorkVideoDecode(qint64 seek){
         checkThreadCompleted();
     }
     qDebug()<< "Video decode thread completed";
-
 }
+
 void FluentPlayer::doInWorkAudioDecode(qint64 seek){
     auto weakThis = QPointer<FluentPlayer>(this);
     auto url = getUrl();

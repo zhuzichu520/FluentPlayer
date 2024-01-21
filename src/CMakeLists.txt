@@ -98,6 +98,9 @@ target_include_directories(FluentPlayer PRIVATE
     ${3RDPARTY_DIR_PATH}/ffmpeg/include
 )
 
+message("----------------")
+message(${3RDPARTY_DIR_PATH})
+
 target_link_libraries(FluentPlayer PRIVATE
     Qt${QT_VERSION_MAJOR}::Core
     Qt${QT_VERSION_MAJOR}::Quick
